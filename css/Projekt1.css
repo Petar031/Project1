@@ -1,0 +1,191 @@
+body{
+    position:relative;
+   
+}
+
+#about{
+    padding-top:50px; 
+}
+#educationskills{
+    padding-top:30px; 
+}
+#portfolio {
+    padding-top:30px;  
+}
+#contact{
+    padding-top:70px; 
+}
+  
+
+#educationskills h1{ 
+    margin-bottom:50px;
+    
+}
+#portfolio h1 {
+    margin-bottom:50px;
+}
+
+
+/*background img  */
+.bg-1 {
+    background-image: url("../img/bg2.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: 30% 80%;
+    height:680px;
+    margin-top:-20px;
+} 
+
+
+
+strong{
+color:white;
+text-shadow:3px 0px 9px;
+letter-spacing:1px;
+}
+
+ /*First section */
+.First {
+padding:65px;
+}
+
+
+em{
+    line-height: 40px;
+}
+
+/*Slides */
+.carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+}
+
+
+.navbar {
+    margin-bottom:0px;
+    border: 0;
+    border-radius: 0;
+    font-size: 15px;
+    letter-spacing: 2px;
+   }
+
+.navbar-inverse{
+    opacity:0.8;
+}
+
+.navbar .navbar-nav {
+    display:inline-block;
+    float:none;
+    vertical-align:top;
+    text-align:center;
+    font-style:italic;
+    
+}
+
+.navbar .navbar-collapse {
+    text-align:center;
+}
+
+
+
+/*Footer  */
+footer{
+    background-color:black;
+    padding:50px;
+    height:150px;
+    margin-top:70px;
+} 
+
+
+footer .glyphicon {
+    font-size:18px;
+    color:lightgrey;
+}
+
+footer p{
+    padding-top:7px;
+    font-size:15px;
+    
+} 
+
+
+
+
+.slideanim {
+    visibility:hidden;
+}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+     visibility: visible; 
+}
+
+
+
+
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+
+
+.Shake:hover {
+   animation: shake 0.5s; 
+   animation-iteration-count: infinite; 
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+@media(max-width:765px){
+     .col-sm-6:last-child h1{margin-top:50px;
+   }
+    
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text  */
+    }
+   
+}
+
+@media (max-width:350px){
+    .First{padding:5px;
+    margin-top:90px;}
+    .col-sm-6:last-child  h1{margin-top:50px;}
+    #portfolio .item img{
+   height:190px;}
+}
